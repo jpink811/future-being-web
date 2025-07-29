@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'FutureBeingI';
+  src: url('./fonts/FutureBeingI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --clay: #C97D60; /* Clay */
+  --bone: #F2E5D7; /* Bone */
+  --dune: #B5AA9D; /* Dune */
+  --smoke: #9C7CA5; /* Smoke */
+  --ash: #747274; /* Basalt */
+
+  --bg: #F2E5D7; /* Bone */
+  --bg-secondary: #B5AA9D; /* Dune */
+  --bg-tertiary: #C97D60; /* Clay */
+  --accent: #9C7CA5; /* Smoke */
+        --accent-secondary: #C97D60; /* Clay */
+  --text: #F2E5D7; /* Bone */
+    --text-secondary: #B5AA9D; /* Dune */
+    --text-tertiary: #C97D60; /* Clay */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bone);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(----color2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 5vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 4vh 5vw;
+}
+
+.logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-wrapper {
+  width: 100%;
+  max-width: 435px; /* or whatever size */
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;
+}
+
+.logo-wrapper svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.brand-name {
+  font-family: 'FutureBeingI', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 888; /* 811 is original */
+  color: var(--clay);
+  letter-spacing: 1.1em; /* 1.0 em is original */
+  margin-top: 1rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 1.2s;
+  margin-bottom: 0.5rem;
+}
+
+.headline {
+  font-family: 'FutureBeing', sans-serif; /* or a clean fallback if FutureBeing is only for logo */
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--clay);
+  letter-spacing: 0.65em;
+  text-transform: none;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 1.6s;
+  margin-bottom: 4rem;
+}
+
+.subhead {
+  font-family: 'FutureBeing', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--ash); /* Use your brand's Smoke tone or equivalent */
+  text-align: center;
+  letter-spacing: 1.3em; /* 0.8px is originally used */
+  opacity: 0;
+  animation: fadeIn 1.6s ease forwards;
+  animation-delay: 2.5s;
+}
+
+.email-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.0rem;
+  gap: 0.5rem;
+}
+
+.email-cta input {
+  padding: 0.75rem 1rem;
+  border-radius: 99px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  min-width: 240px;
+  background-color: var(--bone);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.email-cta input:focus {
+  outline: none;
+  box-shadow: 0 2px 12px rgba(156, 124, 165, 0.3); /* matches the Smoke tone */
+  border-color: var(--clay);
+}
+
+.email-cta button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background-color: var(--dune);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.email-cta button:hover {
+  background-color: var(--clay);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var (var(--clay));
+}
+
+
+
+#Rays {
+  animation: rotateCounter 444s linear infinite, fadeIn 2s ease forwards;
+  animation-delay: 0.3s;
+  transform-origin: center;
+  opacity: 0;
+}
+
+#Crescent {
+  animation: rotateClockwise 222s linear infinite, fadeIn 3s ease forwards;
+  animation-delay: 0.6s;
+  transform-origin: center;
+  opacity: 0;
+}
+
+#Star,
+#Star_2 {
+  fill: red;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+
+
+@keyframes rotateClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateCounter {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
