@@ -150,6 +150,8 @@ body {
 
 .email-cta button:hover {
   background-color: var(--clay);
+  transition: background-color 0.2s ease;
+  color: var(--bone);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px var (var(--clay));
 }
