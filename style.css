@@ -205,8 +205,10 @@ body {
   .headline {
     font-size: 5.5vw;
     max-width: 100%;
-    overflow-wrap: break-word;
-    white-space: normal;
+    letter-spacing: 0.25em;
+    overflow: hidden;
+    white-space: nowrap;
     text-align: center;
+    text-overflow: ellipsis;
   }
 }
