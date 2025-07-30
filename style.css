@@ -121,20 +121,19 @@ body {
 
 .email-cta input {
   color: var(--clay);
+  background-color: var(--bone);
+  box-shadow: 0 2px 8px var(--dune); /*rgba(0, 0, 0, 0.08);  rgba(0, 0, 0, 0.06); */
   padding: 0.75rem 1rem;
   border-radius: 99px;
-  /*border: 1px solid #ccc;*/
+  border: none;;/*border: 1px solid #ccc;*/
   font-size: 1rem;
   min-width: 240px;
-  background-color: var(--bone);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* rgba(0, 0, 0, 0.06); */
-  transition: box-shadow 0.3s ease;
+  /*transition: box-shadow 0.3s ease;*/
 }
 
 .email-cta input:focus {
   outline: none;
   box-shadow: 0 2px 6px var(--smoke); /* matches the Smoke tone */
-  border-color: var(--clay);
 }
 
 .email-cta button {
@@ -144,18 +143,17 @@ body {
   color: var(--clay);
   box-shadow: 0 2px 6px var(--dune);
   font-size: 1rem;
-  border-radius: 99px;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .email-cta button:hover {
-  /*background-color: var(--clay);*/
-  border-color: var(--clay);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
+  background-color: var(--dune);
   color: var(--clay);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px var (var(--clay));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var (var(--smoke));
 }
 
 
