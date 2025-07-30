@@ -139,8 +139,8 @@ body {
 .email-cta button {
   padding: 0.75rem 1.25rem;
   border: none;
-  background-color: var(--dune);
-  color: #fff;
+  background-color: var(--bone);
+  color: var(--clay);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   font-size: 1rem;
   border-radius: 99px;
