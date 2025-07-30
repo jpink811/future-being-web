@@ -204,7 +204,7 @@ body {
   .brand-name {
     font-size: 5.5vw;
     max-width: 100%;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.33em;
     overflow: hidden;
     white-space: nowrap;
     text-align: center;
