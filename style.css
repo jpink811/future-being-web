@@ -93,12 +93,12 @@ body {
   text-transform: none;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: 1.6s;
+  animation-delay: 2.0s;
   margin-bottom: 1rem;
 }
 
 .subhead {
-  font-family: 'FutureBeing', sans-serif;
+  font-family: 'FutureBeing';
   font-size: 1rem;
   font-style: italic;
   font-weight: 400;
@@ -108,7 +108,7 @@ body {
   letter-spacing: 0.8em; /* 0.8px is originally used */
   opacity: 0;
   animation: fadeIn 1.6s ease forwards;
-  animation-delay: 2.5s;
+  animation-delay: 3.5s;
 }
 
 .email-cta {
