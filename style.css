@@ -196,10 +196,17 @@ body {
   to { opacity: 1; }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  body {
+    padding: 4vh 2vw;
+  }
+
   .brand-name,
   .headline {
-    font-size: 4vw;
-    white-space: nowrap;
+    font-size: 5.5vw;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
   }
 }
