@@ -72,7 +72,7 @@ body {
   margin-top: 1rem;
   opacity: 0;
   animation: fadeIn 2.0s ease forwards;
-  animation-delay: 1.2s;
+  animation-delay: 2.8s;
   margin-bottom: 0.5rem;
 }
 
@@ -85,7 +85,7 @@ body {
   text-transform: none;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: 2.5s;
+  animation-delay: 4.5s;
   margin-bottom: 1rem;
 }
 
@@ -100,18 +100,18 @@ body {
   letter-spacing: 0.8em; /* 0.8px is originally used */
   opacity: 0;
   animation: fadeIn 2.5s ease forwards;
-  animation-delay: 3.3s;
+  animation-delay: 6.1s;
 }
 
 .coming-soon-msg {
-  font-family: 'Crimson Pro', serif;
+  font-family: 'FutureBeing';
   font-size: 0.95rem;
   color: var(--clay);
   text-align: center;
   margin: 0 auto 0.25rem auto;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: 5s;
+  animation-delay: 8.2s;
   width: 100%;
 }
 
@@ -130,6 +130,7 @@ body {
 }
 
 .email-cta input {
+  font-family: 'FutureBeing', serif;
   color: var(--ash);
   background-color: var(--bone);
   box-shadow: 0 2px 8px var(--dune); /*rgba(0, 0, 0, 0.08);  rgba(0, 0, 0, 0.06); */
@@ -153,6 +154,7 @@ body {
 }
 
 .email-cta button {
+  font-family: 'FutureBeing', serif;
   padding: 0.75rem 1.25rem;
   border: none;
   background-color: var(--bone);
