@@ -71,7 +71,7 @@ body {
   letter-spacing: 1.1em; /* 1.0 em is original */
   margin-top: 1rem;
   opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
+  animation: fadeIn 2.0s ease forwards;
   animation-delay: 1.2s;
   margin-bottom: 0.5rem;
 }
@@ -85,7 +85,7 @@ body {
   text-transform: none;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: 2.0s;
+  animation-delay: 2.5s;
   margin-bottom: 1rem;
 }
 
@@ -99,15 +99,33 @@ body {
   text-align: center;
   letter-spacing: 0.8em; /* 0.8px is originally used */
   opacity: 0;
-  animation: fadeIn 1.6s ease forwards;
+  animation: fadeIn 2.5s ease forwards;
   animation-delay: 3.3s;
+}
+
+.coming-soon-msg {
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.95rem;
+  color: var(--clay);
+  text-align: center;
+  margin: 0 auto 0.25rem auto;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 5s;
+  width: 100%;
+}
+
+.coming-soon-msg span {
+  font-style: italic;
+  color: var(--dune);
+  margin-bottom: 1rem;
 }
 
 .email-cta {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3.0rem;
+  margin-top: 1.25rem;
   gap: 0.5rem;
 }
 
