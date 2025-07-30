@@ -120,6 +120,7 @@ body {
 }
 
 .email-cta input {
+  color: var(--clay);
   padding: 0.75rem 1rem;
   border-radius: 99px;
   /*border: 1px solid #ccc;*/
