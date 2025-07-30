@@ -196,8 +196,9 @@ body {
   to { opacity: 1; }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .headline {
-    font-size: 6vw; /* Or try 28px if that looks better */
+    font-size: 5vw;
+    white-space: nowrap;
   }
 }
