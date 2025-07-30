@@ -122,7 +122,7 @@ body {
 .email-cta input {
   padding: 0.75rem 1rem;
   border-radius: 99px;
-  border: 1px solid #ccc;
+  /*border: 1px solid #ccc;*/
   font-size: 1rem;
   min-width: 240px;
   background-color: var(--bone);
@@ -149,9 +149,10 @@ body {
 }
 
 .email-cta button:hover {
-  background-color: var(--clay);
+  /*background-color: var(--clay);*/
+  border-color: var(--clay);
   transition: background-color 0.2s ease;
-  color: var(--bone);
+  color: var(--clay);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px var (var(--clay));
 }
