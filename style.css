@@ -126,7 +126,7 @@ body {
   font-size: 1rem;
   min-width: 240px;
   background-color: var(--bone);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* rgba(0, 0, 0, 0.06); */
   transition: box-shadow 0.3s ease;
 }
 
