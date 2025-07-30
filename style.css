@@ -201,8 +201,7 @@ body {
     padding: 4vh 2vw;
   }
 
-  .brand-name,
-  .headline {
+  .brand-name {
     font-size: 5.5vw;
     max-width: 100%;
     letter-spacing: 0.25em;
