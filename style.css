@@ -72,7 +72,7 @@ body {
 }
 
 .brand-name {
-  font-family: 'FutureBeingI', sans-serif;
+  font-family: 'FutureBeingI';
   font-size: 1.75rem;
   font-weight: 888; /* 811 is original */
   color: var(--clay);
