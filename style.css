@@ -71,8 +71,8 @@ body {
   letter-spacing: 1.1em; /* 1.0 em is original */
   margin-top: 1rem;
   opacity: 0;
-  animation: fadeIn 2.0s ease forwards;
-  animation-delay: 2.8s;
+  animation: fadeIn 3.0s ease forwards;
+  animation-delay: 2.5s;
   margin-bottom: 0.5rem;
 }
 
@@ -135,7 +135,7 @@ body {
   background-color: var(--bone);
   box-shadow: 0 2px 8px var(--dune); /*rgba(0, 0, 0, 0.08);  rgba(0, 0, 0, 0.06); */
   padding: 0.75rem 1rem;
-  border-radius: 99px;
+  border-radius: 15px;
   border: none;;/*border: 1px solid #ccc;*/
   font-size: 1rem;
   min-width: 240px;
@@ -161,7 +161,7 @@ body {
   color: var(--clay);
   box-shadow: 0 2px 6px var(--dune);
   font-size: 1rem;
-  border-radius: 50px;
+  border-radius: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
 }

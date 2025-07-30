@@ -67,7 +67,7 @@
     <h1 class="headline">Tools for stillness in a loud world</h1>
     <p class="subhead">Return to presence</p>
 
-<form class="email-form" action="https://formspree.io/f/xrbllzdv" method="post">
+<form class="email-form" action="https://formspree.io/f/xrbllzdv" method="post" data-formspree>
   <div>
     <p class="coming-soon-msg">Practice Kit and Deck arriving soon. <span>Stay close.</span></p>
   </div>
@@ -84,11 +84,37 @@
 
 <!-- JavaScript Logic -->
 <script>
-  const form = document.querySelector('.email-form');
-  const confirmation = document.getElementById('confirmation');
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("[data-formspree]");
+    const emailInput = form.querySelector('input[type="email"]');
+    const button = form.querySelector('button');
+    
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-  form.addEventListener('submit', () => {
-    confirmation.style.display = 'block';
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      button.disabled = true;
+      button.innerText = "Sending...";
+
+      const res = await fetch(form.action, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+
+      if (res.ok) {
+        form.innerHTML = `<p class="confirmation-message">You're in. Welcome home.</p>`;
+      } else {
+        button.disabled = false;
+        button.innerText = "Try again";
+      }
+    });
   });
 </script>
 
