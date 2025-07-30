@@ -133,7 +133,7 @@ body {
 
 .email-cta input:focus {
   outline: none;
-  box-shadow: 0 2px 12px rgba(156, 124, 165, 0.3); /* matches the Smoke tone */
+  box-shadow: 0 2px 6px var(--smoke); /* matches the Smoke tone */
   border-color: var(--clay);
 }
 
