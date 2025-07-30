@@ -72,7 +72,7 @@ body {
 }
 
 .brand-name {
-  font-family: 'FutureBeingI';
+  font-family: 'FutureBeing';
   font-style: italic;
   font-size: 1.75rem;
   font-weight: 888; /* 811 is original */
@@ -86,7 +86,7 @@ body {
 }
 
 .headline {
-  font-family: 'FutureBeing', sans-serif; /* or a clean fallback if FutureBeing is only for logo */
+  font-family: 'FutureBeing'; /* or a clean fallback if FutureBeing is only for logo */
   font-size: 1.05rem;
   font-weight: 300;
   color: var(--clay);
