@@ -11,14 +11,6 @@
   --smoke: #9C7CA5; /* Smoke */
   --ash: #747274; /* Basalt */
 
-  --bg: #F2E5D7; /* Bone */
-  --bg-secondary: #B5AA9D; /* Dune */
-  --bg-tertiary: #C97D60; /* Clay */
-  --accent: #9C7CA5; /* Smoke */
-        --accent-secondary: #C97D60; /* Clay */
-  --text: #F2E5D7; /* Bone */
-    --text-secondary: #B5AA9D; /* Dune */
-    --text-tertiary: #C97D60; /* Clay */
 }
 
 * {
@@ -120,7 +112,7 @@ body {
 }
 
 .email-cta input {
-  color: var(--clay);
+  color: var(--ash);
   background-color: var(--bone);
   box-shadow: 0 2px 8px var(--dune); /*rgba(0, 0, 0, 0.08);  rgba(0, 0, 0, 0.06); */
   padding: 0.75rem 1rem;
@@ -129,6 +121,12 @@ body {
   font-size: 1rem;
   min-width: 240px;
   /*transition: box-shadow 0.3s ease;*/
+}
+
+.email-cta input::placeholder {
+  color: var(--clay);
+  opacity: 0.6; /* optional: softens the tone */
+  font-style: italic; /* optional: fits the tone of your brand */
 }
 
 .email-cta input:focus {
@@ -149,7 +147,7 @@ body {
 }
 
 .email-cta button:hover {
-  transition: background-color 0.3s ease;
+  transition: background-color 1.5s ease;
   background-color: var(--dune);
   color: var(--clay);
   transform: translateY(-2px);
