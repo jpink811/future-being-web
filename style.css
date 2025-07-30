@@ -196,10 +196,10 @@ body {
   to { opacity: 1; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .brand-name,
   .headline {
-    font-size: 5vw;
+    font-size: 4vw;
     white-space: nowrap;
   }
 }
