@@ -76,19 +76,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.headline {
-  font-family: 'FutureBeing'; /* or a clean fallback if FutureBeing is only for logo */
-  font-size: 1.05rem;
-  font-weight: 300;
-  color: var(--clay);
-  letter-spacing: 0.65em;
-  text-transform: none;
-  opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
-  animation-delay: 4.5s;
-  margin-bottom: 1rem;
-}
-
 .subhead {
   font-family: 'FutureBeing';
   font-size: 1rem;
@@ -100,15 +87,29 @@ body {
   letter-spacing: 0.8em; /* 0.8px is originally used */
   opacity: 0;
   animation: fadeIn 2.5s ease forwards;
-  animation-delay: 6.1s;
+  animation-delay: 4.5s;
 }
+
+.headline {
+  font-family: 'FutureBeing'; /* or a clean fallback if FutureBeing is only for logo */
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--clay);
+  letter-spacing: 0.65em;
+  text-transform: none;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 6.1s;
+  margin-bottom: 1rem;
+}
+
 
 .coming-soon-msg {
   font-family: 'FutureBeing';
   font-size: 0.95rem;
   color: var(--clay);
   text-align: center;
-  margin: 0 auto 0.25rem auto;
+  margin: 2rem auto 0.25rem auto;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
   animation-delay: 8.2s;
@@ -132,7 +133,7 @@ body {
 .email-cta input {
   font-family: 'FutureBeing', serif;
   color: var(--ash);
-  background-color: var(--bone);
+  background-color: #f9f4f1;
   box-shadow: 0 2px 8px var(--dune); /*rgba(0, 0, 0, 0.08);  rgba(0, 0, 0, 0.06); */
   padding: 0.75rem 1rem;
   border-radius: 15px;
@@ -157,8 +158,8 @@ body {
   font-family: 'FutureBeing', serif;
   padding: 0.75rem 1.25rem;
   border: none;
-  background-color: var(--bone);
-  color: var(--clay);
+  background-color: var(--clay);
+  color: var(--bone);
   box-shadow: 0 2px 6px var(--dune);
   font-size: 1rem;
   border-radius: 15px;
@@ -219,7 +220,11 @@ body {
   body {
     padding: 4vh 2vw;
   }
-
+  
+  .logo-wrapper {
+    margin-bottom: 2.5rem;
+    }
+  
   .brand-name {
     font-size: 5.5vw;
     max-width: 100%;
@@ -229,4 +234,48 @@ body {
     text-align: center;
     text-overflow: ellipsis;
   }
+
+  .email-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .email-cta input[type="email"] {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    
+    color: #9C7CA5;
+    font-style: italic;
+    opacity: 0.9;
+    font-weight: 400;
+  }
+
+  .email-cta button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .coming-soon-msg {
+    margin-top: 3 rem;
+  }
+
+  .coming-soon-msg span {
+    margin-top: 3rem;
+  }
+
 }
