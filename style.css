@@ -170,7 +170,7 @@ body {
 .email-cta button:hover {
   transition: background-color 1.5s ease;
   background-color: var(--dune);
-  color: var(--bone);
+  color: var(--smoke);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px var (var(--smoke));
 }
@@ -193,7 +193,6 @@ body {
 
 #Star,
 #Star_2 {
-  fill: red;
   transform: none !important;
   animation: none !important;
   transition: none !important;
