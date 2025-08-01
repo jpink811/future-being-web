@@ -72,11 +72,11 @@ body {
   margin-top: 1rem;
   opacity: 0;
   animation: fadeIn 3.0s ease forwards;
-  animation-delay: 2.5s;
-  margin-bottom: 0.5rem;
+  animation-delay: 1.8s;
+  margin-bottom: 2rem;
 }
 
-.subhead {
+.subhead { /* Return to presence */
   font-family: 'FutureBeing';
   font-size: 1rem;
   font-style: italic;
@@ -90,7 +90,7 @@ body {
   animation-delay: 4.5s;
 }
 
-.headline {
+.headline { /* Tools for stillness in a loud world */
   font-family: 'FutureBeing'; /* or a clean fallback if FutureBeing is only for logo */
   font-size: 1.05rem;
   font-weight: 300;
@@ -98,8 +98,8 @@ body {
   letter-spacing: 0.65em;
   text-transform: none;
   opacity: 0;
-  animation: fadeIn 1.5s ease forwards;
-  animation-delay: 6.1s;
+  animation: fadeIn 3.5s ease forwards;
+  animation-delay: 1.8s;
   margin-bottom: 1rem;
 }
 
@@ -157,7 +157,7 @@ body {
   box-shadow: 0 4px 12px var (var(--smoke));
 }
 
-.coming-soon-msg {
+.coming-soon-msg { /* Practice Kit and Deck arriving soon. */
   font-family: 'FutureBeing';
   font-size: 0.95rem;
   color: var(--clay);
@@ -165,16 +165,16 @@ body {
   margin: 2rem auto 0.25rem auto;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
-  animation-delay: 8.2s;
+  animation-delay: 1.8s;
   width: 100%;
 }
 
 .coming-soon-msg span {
   font-style: italic;
-  color: var(--dune);
+  font-weight: 600;
+  color: var(--clay);
   margin-bottom: 1rem;
 }
-
 
 
 #Rays {
