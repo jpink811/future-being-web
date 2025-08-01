@@ -106,6 +106,7 @@ body {
 
 .email-cta {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1.25rem;
@@ -113,17 +114,32 @@ body {
 }
 
 .email-cta input {
-  font-family: 'FutureBeing', serif;
+
   color: var(--ash);
   background-color: #f9f4f1;
-  box-shadow: 0 2px 8px var(--dune); /*rgba(0, 0, 0, 0.08);  rgba(0, 0, 0, 0.06); */
-  padding: 0.75rem 1rem;
-  border-radius: 15px;
-  border: none;;/*border: 1px solid #ccc;*/
-  font-size: 1rem;
   min-width: 240px;
-  /*transition: box-shadow 0.3s ease;*/
+  transition: box-shadow 0.3s ease;
 }
+
+.email-cta button {
+  background-color: var(--clay);
+  color: var(--bone);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.email-cta input,
+.email-cta button {
+  width: 100%;
+  max-width: 320px; 
+  font-family: 'FutureBeing', serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 8px var(--dune);
+  border-radius: 15px;
+  border: none;
+}
+
 
 .email-cta input::placeholder {
   color: var(--clay);
@@ -134,19 +150,6 @@ body {
 .email-cta input:focus {
   outline: none;
   box-shadow: 0 2px 6px var(--smoke); /* matches the Smoke tone */
-}
-
-.email-cta button {
-  font-family: 'FutureBeing', serif;
-  padding: 0.75rem 1.25rem;
-  border: none;
-  background-color: var(--clay);
-  color: var(--bone);
-  box-shadow: 0 2px 6px var(--dune);
-  font-size: 1rem;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .email-cta button:hover {
