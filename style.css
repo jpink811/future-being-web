@@ -109,7 +109,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1.25rem;
+  margin-top: 2.0rem;
+  margin-bottom: 2.5rem;
   gap: 0.5rem;
 }
 
@@ -117,6 +118,7 @@ body {
 
   color: var(--ash);
   background-color: #f9f4f1;
+  padding: 0.75rem 1rem;
   min-width: 240px;
   transition: box-shadow 0.3s ease;
 }
@@ -124,6 +126,9 @@ body {
 .email-cta button {
   background-color: var(--clay);
   color: var(--bone);
+  padding: 1rem 1rem;
+  letter-spacing: 0.45em; /*0.65em;*/
+  margin-top: 0.15rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -134,7 +139,7 @@ body {
   max-width: 320px; 
   font-family: 'FutureBeing', serif;
   font-size: 1rem;
-  padding: 0.75rem 1rem;
+  /*padding: 0.75rem 1rem;*/
   box-shadow: 0 2px 8px var(--dune);
   border-radius: 15px;
   border: none;
@@ -165,7 +170,7 @@ body {
   font-size: 0.95rem;
   color: var(--clay);
   text-align: center;
-  margin: 2rem auto 0.25rem auto;
+  margin: 3.0rem auto 0.25rem auto;
   opacity: 0;
   animation: fadeIn 1.5s ease forwards;
   animation-delay: 1.8s;
@@ -264,7 +269,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 0.5rem;
-    font-weight: 600;
+    /*font-weight: 600;*/
     cursor: pointer;
     width: 100%;
     max-width: 300px;
