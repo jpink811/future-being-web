@@ -91,7 +91,7 @@ body {
 }
 
 .headline { /* Tools for stillness in a loud world */
-  font-family: 'FutureBeing'; /* or a clean fallback if FutureBeing is only for logo */
+  font-family: 'FutureBeing'; 
   font-size: 1.05rem;
   font-weight: 300;
   color: var(--clay);
@@ -101,6 +101,10 @@ body {
   animation: fadeIn 3.5s ease forwards;
   animation-delay: 1.8s;
   margin-bottom: 1rem;
+}
+
+.headline-mobile {
+  display: none;
 }
 
 
@@ -284,4 +288,21 @@ body {
     margin-top: 3rem;
   }
 
+  .headline-mobile {
+    display: inline;
+    font-family: 'FutureBeing'; 
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--clay);
+    letter-spacing: 0.65em;
+    text-transform: none;
+    opacity: 0;
+    animation: fadeIn 3.5s ease forwards;
+    animation-delay: 1.8s;
+    margin-bottom: 1rem;
+  }
+
+  .headline {
+    display: none;
+  }
 }
