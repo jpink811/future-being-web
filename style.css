@@ -25,9 +25,20 @@ body {
   color: var(----color2);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4vh 5vw;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--bone); /* or your brand color */
 }
 
 .container {
