@@ -308,8 +308,9 @@ main {
   text-align: center;
   font-size: 0.9rem;
   padding: 1rem 0;
-  opacity: 0.6;
+  opacity: 0.8;
   border-top: 1px solid rgba(0,0,0,0.1); /* thin divider line */
+  color: var(--dune);
 }
 
 /* Optional social link styling */
@@ -317,7 +318,12 @@ main {
   margin: 0 0.5rem;
   text-decoration: none;
   font-size: 0.9rem;
-  color: inherit;
+  color: var(--clay);
+}
+
+.site-footer img {
+  width: 24px;
+  height: 24px;
 }
 
 .site-footer .social-links a:hover {
