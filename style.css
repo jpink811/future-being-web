@@ -407,7 +407,7 @@ main {
   }
 
   .headline-mobile {
-    display: inline;
+    display: none;
     font-family: 'FutureBeing'; 
     font-size: 1.05rem;
     font-weight: 300;
@@ -421,6 +421,6 @@ main {
   }
 
   .headline {
-    display: none;
+    display: inline;
   }
 }
