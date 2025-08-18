@@ -9,7 +9,7 @@
   --bone: #F2E5D7; /* Bone */
   --dune: #B5AA9D; /* Dune */
   --smoke: #9C7CA5; /* Smoke */
-  --ash: #747274; /* Basalt */
+  --basalt: #747274; /* Basalt */
 
 }
 
@@ -142,7 +142,7 @@ main {
 }
 
 .email-cta input {
-  color: var(--ash);
+  color: var(--basalt);
   background-color: #f9f4f1;
   padding: 0.75rem 1rem;
   font-size: 1rem;
@@ -165,9 +165,9 @@ main {
 .email-cta input,
 .email-cta button {
   width: 100%;
-  max-width: 320px; 
+  max-width: 500px; 
   font-family: 'FutureBeing', serif;
-  box-shadow: 0 2px 8px var(--dune);
+  
   border-radius: 15px;
   border: none;
 }
