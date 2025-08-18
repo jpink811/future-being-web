@@ -102,7 +102,7 @@
 
                 <h1 class="headline-mobile">Tools for stillness<br>in a loud world</h1>
         
-                <form class="email-form" action="https://formspree.io/f/xrbllzdv" method="post" data-formspree>  
+                 
                     <div class="email-cta">
                         <link rel="preload" href="https://assets.flodesk.com/futura-pt.css" as="style">
 <link rel="stylesheet" href="https://assets.flodesk.com/futura-pt.css">
@@ -1010,42 +1010,6 @@
     </footer>
 
     
-
-<!-- JavaScript Logic -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("[data-formspree]");
-    const emailInput = form.querySelector('input[type="email"]');
-    const button = form.querySelector('button');
-    
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-      const formData = new FormData(form);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-
-      button.disabled = true;
-      button.innerText = "Sending...";
-
-      const res = await fetch(form.action, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: json,
-      });
-
-      if (res.ok) {
-        form.innerHTML = `<p class="confirmation-message">You're in. Welcome home.</p>`;
-      } else {
-        button.disabled = false;
-        button.innerText = "Try again";
-      }
-    });
-  });
-</script>
 
 <!-- External JS (optional, but place outside any <script> block) -->
 <script src="script.js"></script>
