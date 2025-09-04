@@ -39,6 +39,8 @@ main {
   flex: 1; /* pushes footer down */
   overflow-y: scroll;
   scroll-snap-type: y mandatory; /* Enables scroll snapping */
+  scroll-snap-stop: always; /* Ensures snapping always occurs */
+  padding-top: 80px; /* Match or exceed your header’s height */
 }
 
 section {
@@ -50,6 +52,22 @@ section {
   align-items: center;
   text-align: center;
   padding: 0 2rem;
+}
+
+section#logo {
+  scroll-snap-align: none; /* Disable snap for logo section */
+}
+
+.logo-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--bone); /* or your brand color */
 }
 
 .logo-wrapper {
@@ -71,7 +89,7 @@ section {
 .brand-name {
   font-family: 'MuseoModerno', sans-serif;
   font-size: 2.8rem;
-  font-weight: 800; /* 811 is original */
+  font-weight: 900; /* 811 is original */
   color: var(--clay);
   letter-spacing: 1.0em; /* 1.0 em is original */
   margin-top: 1rem;
@@ -129,6 +147,19 @@ section {
   animation-delay: 4.0s;*/
 }
 
+/* Style for "next" links */
+a.next {
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* use the same text color as surrounding */
+  display: inline-block; /* ensures hover states apply nicely */
+  cursor: pointer;       /* makes it clear it's clickable */
+  transition: opacity 0.3s ease;
+}
+
+a.next:hover,
+a.next:focus {
+  opacity: 0.7; /* subtle feedback on hover */
+}
 
 /* Logo Animations */
 #Rays {
@@ -178,6 +209,10 @@ section {
   transition-delay: 1.5s;
 }
 
+
+
+
+
 /* Fixed Header */
 .site-header {
   position: fixed;        /* Makes it float at the top */
@@ -191,10 +226,6 @@ section {
   backdrop-filter: blur(6px); /* Optional nice effect */
 }
 
-/* Push page content down so it’s not hidden under the fixed header */
-main {
-  padding-top: 80px; /* Match or exceed your header’s height */
-}
 
 /* Footer */
 .site-footer {
